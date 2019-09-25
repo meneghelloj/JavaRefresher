@@ -12,7 +12,6 @@ public class Beard extends Face{
     }
     Beard() {
         super("Manly Ragnar","Male");
-        //name = "Ragnar";
         this.setHairColor("Red");
         this.setNoseLength(3);
         this.setMouthLength(4);

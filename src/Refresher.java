@@ -10,7 +10,6 @@ public class Refresher {
         Scanner read = new Scanner(System.in);
         System.out.println("What's your name?");
         String name = read.nextLine();
-        //Face josh;
         Beard joshBeard;
         String color;
         if(name.isEmpty())
@@ -18,7 +17,6 @@ public class Refresher {
             System.out.println("Why you shy? Let me tell you who you are.");
             joshBeard = new Beard();
         } else {
-            //josh = new Face(name, "Male");
             joshBeard = new Beard(name);
             System.out.println("What color is your beard?");
             color = read.nextLine();
