@@ -10,14 +10,14 @@ public class Refresher {
         Scanner read = new Scanner(System.in);
         System.out.println("What's your name?");
         String name = read.nextLine();
-        Beard joshBeard;
+        BeardedFace joshBeard;
         String color;
         if(name.isEmpty())
         {
             System.out.println("Why you shy? Let me tell you who you are.");
-            joshBeard = new Beard();
+            joshBeard = new BeardedFace();
         } else {
-            joshBeard = new Beard(name);
+            joshBeard = new BeardedFace(name);
             System.out.println("What color is your beard?");
             color = read.nextLine();
             joshBeard.setColor(color);
@@ -37,7 +37,7 @@ public class Refresher {
         stats(joshBeard);
         stats(amandaFace);
         stats(new Face());
-        stats(new Beard());
+        stats(new BeardedFace());
     }
 
     public static void stats(Face person) {

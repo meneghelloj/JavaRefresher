@@ -1,16 +1,16 @@
-public class Beard extends Face{
+public class BeardedFace extends Face{
     //String name;
     String beardColor;
 
-    Beard(String name) {
+    BeardedFace(String name) {
         super("Manly "+name,"Male");
         this.beardColor = hairColor;
     }
-    Beard(Face face) {
+    BeardedFace(Face face) {
         super("Manly " + face.getName(),"Male");
         this.beardColor = face.hairColor;
     }
-    Beard() {
+    BeardedFace() {
         super("Manly Ragnar","Male");
         this.setHairColor("Red");
         this.setNoseLength(3);
